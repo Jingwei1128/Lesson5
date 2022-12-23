@@ -2,7 +2,7 @@ from flask import Flask,render_template,jsonify
 
 app = Flask(__name__)
 
-tmpData = '{
+tmpData = '''{
     "title":"loc",
     "data":[{
       "name":"abc-1234",
@@ -20,7 +20,7 @@ tmpData = '{
         {"lng":121.748623,"lat":25.038996}
       ]
     }]
-}'
+}'''
 
 @app.route("/")
 def home():
